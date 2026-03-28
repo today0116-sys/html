@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html, 선택자</title>
+ <style>
+/* 헤더탑 */
+.hdr-top-wrap{}
+.hdr-top-wrap>.hdr-top{}
+.hdr-top-wrap>.hdr-top>i{}
+
+/* 헤더 */
+.hdr-wrap{}
+.hdr-wrap>header{}
+.hdr-wrap>header>h1{}
+.hdr-wrap>header>ul{}
+.hdr-wrap>header>ul>li{}
+
+
+/* 컨텐츠공통 */
+.content-wrap{}
+.content-wrap>.content{}
+.content-wrap>.content>header{}
+.content-wrap>.content>header>h2{}
+.content-wrap>.content>header>h4{}
+.content-wrap>.content>section{}
+.content-wrap>.content>section>article{}
+.content-wrap>.content>section>article>.image{}
+.content-wrap>.content>section>article>.texts{}
+.content-wrap>.content>section>article>.texts>h3{}
+.content-wrap>.content>section>article>.texts>h4{}
+.content-wrap>.content>section>article>.texts>p{}
+.content-wrap>.content>section>article>.texts>.icons{}
+.content-wrap>.content>section>article>.texts>.icons>i{}
+
+
+/* 컨텐츠1 */
+.content-wrap.cnt-wrap1{}
+.content-wrap.cnt-wrap1>.content.cnt1{}
+.content-wrap.cnt-wrap1>.content.cnt1>header{}
+.content-wrap.cnt-wrap1>.content.cnt1>header>h2{}
+.content-wrap.cnt-wrap1>.content.cnt1>header>h4{}
+.content-wrap.cnt-wrap1>.content.cnt1>section{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-top{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h3{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h4{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>p{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>.icons{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>.icons>i{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-btm{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>h3{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>p{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>.icons{}
+.content-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>.icons>i{}
+
+/* 컨텐츠2 */
+.content-wrap.cnt-wrap2{}
+.content-wrap.cnt-wrap2>.content.cnt2{}
+.content-wrap.cnt-wrap2>.content.cnt2{}
+
+
+/* 푸터 */
+.ftr-wrap{}
+.ftr-wrap>footer{}
+.ftr-wrap>footer>h4{}
+.ftr-wrap>footer>address{}
+.ftr-wrap>footer>.icons{}
+.ftr-wrap>footer>.icons>i{}
+
+
+ </style>
+
+    
+    <link rel="stylesheet" href="./all.min.css">
+
+
+
+
+</head>
+
+<body>
+    <!-- 헤더탑 -->
+    <div class="hdr-top-wrap">
+        <div class="hdr-top">
+            <i></i>
+        </div>
+    </div>
+    <!-- 헤더 -->
+    <div class="hdr-wrap">
+        <header>
+            <h1>logo here</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </header>
+    </div>
+    <!-- 컨텐츠1 -->
+    <div class="content-wrap cnt-wrap1">
+        <div class="content cnt1">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore?</h4>
+            </header>
+            <section>
+                <div class="art-top">
+                    <article>
+                        <div class="image">이미지</div>
+                        <div class="texts">
+                            <h3>segment title</h3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae totam ea enim
+                                sint ad sequi, quae culpa omnis quis veritatis reprehenderit tempore ducimus atque
+                                adipisci quas vitae maxime molestias.</P>
+                            <div class="icons">
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                    </article>
+                    article>
+                    <div class="image">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae totam ea enim
+                            sint ad sequi, quae culpa omnis quis veritatis reprehenderit tempore ducimus atque adipisci
+                            quas vitae maxime molestias.</P>
+                        <div class="icons">
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                    </article>
+                </div>
+                <div class="art-btm">
+                    <article>
+                        <div class="image">이미지</div>
+                        <div class="texts">
+                            <h3>segment title</h3>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae totam ea enim
+                                sint ad sequi, quae culpa omnis quis veritatis reprehenderit tempore ducimus atque
+                                adipisci quas vitae maxime molestias.</P>
+                            <div class="icons">
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">이미지</div>
+                        <div class="texts">
+                            <h3>segment title</h3>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae totam ea enim
+                                sint ad sequi, quae culpa omnis quis veritatis reprehenderit tempore ducimus atque
+                                adipisci quas vitae maxime molestias.</P>
+                            <div class="icons">
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">이미지</div>
+                        <div class="texts">
+                            <h3>segment title</h3>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae totam ea enim
+                                sint ad sequi, quae culpa omnis quis veritatis reprehenderit tempore ducimus atque
+                                adipisci quas vitae maxime molestias.</P>
+                            <div class="icons">
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- 컨텐츠2 -->
+    <div class="content-wrap cnt-wrap2">
+        <div class="content cnt2">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis commodi veniam animi, ex vel
+                    tenetur?</h4>
+            </header>
+            <section>
+                <article>
+                    <div class="image">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore magnam laudantium, dicta
+                            numquam, consequuntur reprehenderit architecto provident sit dolor, magni nisi! Eaque
+                            consectetur repellendus distinctio, magnam fugit possimus aspernatur deleniti.</p>
+                        <button>button</button>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <!-- 컨텐츠3 -->
+    <div class="content-wrap cnt-wrap3">
+        <div class="content cnt3">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis commodi veniam animi, ex vel
+                    tenetur?</h4>
+            </header>
+            <section>
+                <article>
+                    <div class="image">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil praesentium ullam, voluptatum
+                            fugit illo placeat?</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="image">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil praesentium ullam, voluptatum
+                            fugit illo placeat?</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="image">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil praesentium ullam, voluptatum
+                            fugit illo placeat?</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="image">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil praesentium ullam, voluptatum
+                            fugit illo placeat?</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <div class="ftr-wrap">
+        <footer>
+            <h4>logo here</h4>
+            <address>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam praesentium labore nulla quaerat rem, vero ipsa amet illum saepe illo.</address>
+            <div class="icons">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
