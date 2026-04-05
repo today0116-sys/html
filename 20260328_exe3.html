@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./reset.css">
     <style>
+        
         /* 헤더탑 */
         .hdr-top-wrap{
             /* CSS 속성 */
@@ -187,7 +188,7 @@
             color: #fff;
             padding-top: 80px;
             padding-bottom: 300px;
-            background-image: url('./image/conten2_bg.png');
+            background-image: url("./image/content2_bg1.png");
             background-size: 33.33% 100%;
             background-repeat: repeat-x;
         }
@@ -230,6 +231,10 @@
             height: 120px;
             margin-top: 20px;
         }
+        .content-wrap.content2>.content.cnt2>section>article:nth-of-type>.texts>button{
+            background-color: #f00;
+        }
+        
         .content-wrap.content2>.content.cnt2>section>article>.texts>button{
             line-height: 40px;
             width: calc(100% / 6 * 4);
@@ -237,6 +242,8 @@
             margin-top: 20px;
             color: #fff;
             border-radius: 20px;
+            transition: margin-top 0.5s;
+            
         }
 
         /* 콘텐츠3 */
@@ -316,7 +323,20 @@
             text-align: center;
             font-size: 45px;
         }
-
+    @media (max-width: 1024px) {
+        .content-wrap.content1>.content.cnt1>section>.art-top>article:nth-of-type(2){
+        display: none;
+        }
+        .content-wrap.content1>.content.cnt1>section>.art-top>article{
+            width: 100%;
+        }
+    }
+    @media (max-width: 420px) {
+        .hdr-top-wrap{
+        background-color: rgba(15,220,145)
+            
+        }
+    }
         </style>
     <title>20260328_exe3</title>
 </head>
@@ -432,7 +452,7 @@
             <section>
                 <article>
                     <div class="image">
-                        <video src="./image/191724-891315404_tiny.mp4" autoplay muted loop></video>
+                        <video src="./image/192982-893872201_tiny.mp4" autoplay muted loop></video>
                     </div>
                     <div class="texts">
                         <h3>segmentTitle</h3>

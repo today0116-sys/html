@@ -8,21 +8,33 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./reset.css">
     <style>
-        /* hdr-top-wrap */
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jersey+10&family=Racing+Sans+One&family=Red+Rose:wght@300..700&display=swap');
+        
+
+        body{ font-family: "Fira Sans";
+
+        }
+        /* 헤더탑 */
         .hdr-top-wrap {
             background-color: #212517;
         }
+
         .hdr-top-wrap>.hdr-top {
             width: 80%;
             max-width: 1080px;
             margin: 0 auto;
             line-height: 40px;
             text-align: center;
+
+
         }
 
-        .hdr-top-wrap>.hdr-top>i {}
+        .hdr-top-wrap>.hdr-top>i {
+            font-size: 35px;
+            color: #fff;
+        }
 
-        /* hdr-wrap */
+        /* 헤더 */
         .hdr-wrap {
             background-color: #a31f30;
         }
@@ -34,19 +46,27 @@
             display: flex;
             justify-content: space-between;
             line-height: 80px;
-        }
+            color: #fff;
+            font-family: "Fira Sans";
+        } 
 
-        .hdr-wrap>header>h1 {}
+        .hdr-wrap>header>h1 {
+            font-size: 25px;
+        }
 
         .hdr-wrap>header>ul {
             display: flex;
             column-gap: 20px;
+
         }
 
-        .hdr-wrap>header>ul>li {}
+        .hdr-wrap>header>ul>li {
+            font-size: 20px;
+
+        }
 
         /* 콘텐츠 공통 */
-        .cnt-wrap{}
+        .cnt-wrap {}
 
         .cnt-wrap>.content {
             width: 80%;
@@ -57,10 +77,15 @@
 
         .cnt-wrap>.content>header {
             text-align: center;
+            text-transform: capitalize;
+
         }
 
         .cnt-wrap>.content>header>h2 {
             line-height: 80px;
+            font-size: 40px;
+            font-weight: 700;
+
         }
 
         .cnt-wrap>.content>header>h4 {
@@ -69,6 +94,9 @@
             overflow: hidden;
             width: calc(100% / 12 * 6);
             margin: 0 auto;
+            font-size: 12px;
+
+
         }
 
         .cnt-wrap>.content>section {
@@ -77,35 +105,50 @@
 
         .cnt-wrap>.content>section>article {}
 
-        .cnt-wrap>.content>section article>.image {
+        .cnt-wrap>.content>section>article>.image {
             background-color: #ccc;
+            height: 320px;
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            color: transparent;
         }
 
         .cnt-wrap>.content>section>article>.texts {}
 
-        .cnt-wrap>.content>section article>.texts>h3{
+        .cnt-wrap>.content>section article>.texts>h3 {
             line-height: 40px;
+            font-size: 25px;
+            font-weight: 700;
+             text-transform: capitalize;
+
         }
 
-        .cnt-wrap>.content>section article>.texts>h4{
+        .cnt-wrap>.content>section article>.texts>h4 {
             line-height: 40px;
             height: 40px;
             overflow: hidden;
+            font-size: 14px;
+            font-weight: 600;
+
         }
 
-        .cnt-wrap>.content>section>article>.texts>p {
+        .cnt-wrap>.content>section article>.texts>p {
             height: 80px;
             line-height: 20px;
             overflow: hidden;
+            font-size: 12px;
         }
 
         .cnt-wrap>.content>section article>.texts>.icons {
             line-height: 40px;
+            font-size: 23px;
+
         }
 
         .cnt-wrap>.content>section>article>.texts>.icons>i {}
 
-        /* cnt-wrap1 */
+        /* 컨텐츠1 */
         .cnt-wrap.cnt-wrap1 {}
 
         .cnt-wrap.cnt-wrap1>.content.cnt1 {}
@@ -128,15 +171,25 @@
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image {
             height: 320px;
+            background-color: #ccc;
+            color: transparent;
         }
 
-        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i2 {}
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i1 {
+            background-image: url("./image/content1_image1.png");
+        }
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i2 {
+             background-image: url("./image/content1_image2.png");
+        }
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts {
             padding-top: 40px;
-            padding-bottom: 40px;
+            padding-bottom: 80px;
             padding-left: calc(100% / 6 * 0.5);
             padding-right: calc(100% / 6 * 2);
+            border: 1px solid #d9d9d9;
+
         }
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h3 {}
@@ -154,20 +207,33 @@
             display: flex;
             margin-top: 40px;
             column-gap: 20px;
+
+
         }
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article {}
+
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image {
-            height: 320px;
+            height: 320px;color: transparent;
         }
 
-        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i1 {}
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i1 {
+             background-image: url("./image/content1_image3.png");
+        }
 
-        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i2 {}
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i2 {
+             background-image: url("./image/content1_image4.png");
+        }
 
-        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i3 {}
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i3 {
+             background-image: url("./image/content1_image5.png");
+        }
 
-        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts {}
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts {
+            border: 1px solid #d9d9d9;
+            padding: 40px  calc(100% / 4 * 0.2);
+
+        }
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>h3 {}
 
@@ -177,7 +243,7 @@
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>.icons>i {}
 
-        /* cnt-wrap2 */
+        /* 컨텐츠2 */
         .cnt-wrap.cnt-wrap2 {}
 
         .cnt-wrap.cnt-wrap2>.content.cnt2 {
@@ -189,6 +255,8 @@
             padding-top: 80px;
             padding-bottom: 360px;
             background-color: #A31F30;
+            color: #fff;
+
         }
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>header>h2 {}
@@ -196,9 +264,11 @@
         .cnt-wrap.cnt-wrap2>.content.cnt2>header>h4 {
             width: calc(80% / 12 * 6);
             max-width: 520px;
+
         }
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>section {
+
             width: 80%;
             max-width: 1080px;
             margin: 0 auto;
@@ -207,15 +277,20 @@
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>section>article {
             display: flex;
+            background-color: #fff;
+            box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.25);
         }
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.image {
             width: 50%;
+             background-image: url("./image/content2_image1.png");
+             height: 440px;
         }
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts {
             width: 50%;
             text-align: center;
+            padding: 80px calc(100% / 12)
         }
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h3 {}
@@ -232,9 +307,14 @@
             margin-top: 20px;
             width: calc(100% / 6 * 4);
             background-color: #212517;
+            border-radius: 20px;
+            color: #fff;
+
+
+
         }
 
-        /* cnt-wrap3 */
+        /* 컨텐츠3 */
         .cnt-wrap.cnt-wrap3 {}
 
         .cnt-wrap.cnt-wrap3>.content.cnt3 {}
@@ -250,20 +330,36 @@
             column-gap: 20px;
         }
 
-        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article {}
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article {
+            height: 200px;
+            overflow: hidden;
+        }
 
         .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image {
             height: 200px;
         }
-        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i1 {}
 
-        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i2 {}
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i1 {
+             background-image: url("./image/content3_image1.png");
+        }
 
-        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i3 {}
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i2 {
+             background-image: url("./image/content3_image2.png");
+        }
 
-        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i4 {}
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i3 {
+            background-image: url("./image/content3_image3.png");
+        }
 
-        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts {}
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i4 {
+            background-image: url("./image/content3_image4.png");
+        }
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts {
+
+            padding: 40px 20px;
+
+        }
 
         .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts>h3 {}
 
@@ -272,6 +368,7 @@
         /* ftr-wrap */
         .ftr-wrap {
             background-color: #a31f30;
+
         }
 
         .ftr-wrap>footer {
@@ -282,22 +379,32 @@
             padding-top: 40px;
             padding-bottom: 80px;
             text-align: center;
+            color: #fff;
+
+
         }
 
         .ftr-wrap>footer>h4 {
             line-height: 80px;
+            font-size: 14px;
+            text-transform: capitalize;
+
         }
 
         .ftr-wrap>footer>address {
             line-height: 20px;
             height: 40px;
             overflow: hidden;
+
             width: calc(100% / 12 * 8);
-            margin: 0 auto;        
+            margin: 0 auto;
+            font-size: 14px;
+
         }
 
         .ftr-wrap>footer>.icons {
             line-height: 80px;
+
         }
 
         .ftr-wrap>footer>.icons>i {}
@@ -307,7 +414,7 @@
 <body>
     <div class="hdr-top-wrap">
         <div class="hdr-top">
-             <i class="fa-solid fa-sleigh"></i>
+            <i class="fa-solid fa-sleigh"></i>
         </div>
     </div>
     <div class="hdr-wrap">
@@ -338,7 +445,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum ratione unde tempore in
                                 repudiandae id, temporibus repellendus aperiam officia omnis distinctio doloribus illo
                                 voluptatem ullam saepe praesentium veritatis ea repellat.</p>
-                             <div class="icons">
+                            <div class="icons">
                                 <i class="fa-solid fa-thumbs-up"></i>
                                 <i class="fa-solid fa-share-nodes"></i>
                             </div>
@@ -352,7 +459,7 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor temporibus ullam, unde
                                 laboriosam nam necessitatibus eum voluptas nesciunt accusantium excepturi sapiente
                                 perspiciatis dolorum impedit quaerat. Maiores et neque tempore dolorum?</p>
-                             <div class="icons">
+                            <div class="icons">
                                 <i class="fa-solid fa-thumbs-up"></i>
                                 <i class="fa-solid fa-share-nodes"></i>
                             </div>
@@ -367,7 +474,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque hic, ipsa minus
                                 eveniet soluta ad voluptas quidem! Debitis vero recusandae dignissimos suscipit nesciunt
                                 voluptas soluta vitae facere nobis quod?</p>
-                             <div class="icons">
+                            <div class="icons">
                                 <i class="fa-solid fa-thumbs-up"></i>
                                 <i class="fa-solid fa-share-nodes"></i>
                             </div>
@@ -380,7 +487,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta officia ea
                                 veritatis magni facilis tempore fugit voluptatem tempora amet repudiandae nesciunt, sunt
                                 provident molestias distinctio at, est, et doloribus!</p>
-                             <div class="icons">
+                            <div class="icons">
                                 <i class="fa-solid fa-thumbs-up"></i>
                                 <i class="fa-solid fa-share-nodes"></i>
                             </div>
@@ -393,7 +500,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quia corrupti neque
                                 officiis consequuntur ratione modi debitis, esse hic, sit officia aliquam nihil aperiam.
                                 Dolor autem quaerat illo laborum deleniti!</p>
-                             <div class="icons">
+                            <div class="icons">
                                 <i class="fa-solid fa-thumbs-up"></i>
                                 <i class="fa-solid fa-share-nodes"></i>
                             </div>
@@ -486,7 +593,7 @@
             <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor velit nisi quia eligendi minima
                 dolores corrupti culpa nemo mollitia sed quis, harum tempora aspernatur temporibus vitae nesciunt earum!
                 Optio, incidunt!</address>
-           <div class="icons">
+            <div class="icons">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-square-facebook"></i>
                 <i class="fa-brands fa-square-twitter"></i>
