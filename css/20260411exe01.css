@@ -51,7 +51,9 @@ body{
     column-gap: 20px;
     font-size: 20px;
 }
-.hdr-wrap>header>ul>li{
+.hdr-wrap>header>ul>li:nth-child(4){
+    display: none;
+   
    
 }
 
@@ -428,9 +430,7 @@ padding-bottom: 80px ;
 
 
 @media (max-width: 420px) {
-    .hdr-wrap{
-        display: none;
-    }
+
 
 .cnt-wrap1>.cnt1>section>.art-top>article>.texts{
 display: none;}
@@ -497,7 +497,7 @@ display: none;}
 }
 .cnt-wrap>.content>section{
     width: 100%;
-    max-width: 420px;
+
 }
 .cnt-wrap>.content{
     width: 90%;
@@ -523,4 +523,11 @@ display: none;}
 .ftr-wrap>footer>h4{
     font-size: 30px;
 }
+.hdr-wrap>header>ul>li{
+    display: none;
+}
+.hdr-wrap>header>ul>li:nth-child(4){
+    display: inline;
+}
+
 }
