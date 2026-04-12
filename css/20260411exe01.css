@@ -14,7 +14,7 @@ body{
     width: 80%;
     margin: 0 auto;
    max-width: 1080px;
-   text-align: center;
+   
    background-image: url("../image/hdr_img.png");
    background-repeat: repeat-x;
 }
@@ -22,12 +22,14 @@ body{
     line-height: 40px ;
      font-size: 35px;
      color: #fff;
+     animation: mov 20s infinite linear;
 }
 
 
 /* ================= 헤더 ================= */
 .hdr-wrap{
     background: #A31F30;
+    animation: ani 0.8s 3 ;
      color: #fff;
      font-weight: 700;
      text-transform: capitalize;
@@ -239,14 +241,30 @@ body{
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
    
 }
+
+.cnt-wrap2>.cnt2>section>article>.image>input{
+    display: none;
+    
+   
+}
+
+
+.cnt-wrap2>.cnt2>section>article>.image>input:checked+video{
+    opacity: 0;
+    
+}
+
 .cnt-wrap2>.cnt2>section>article>.image{
     width: 50%;
-    background-image: url("../image/content2_image1.png");
+    background-image: url("../image/spring.png");
 }
 .cnt-wrap2>.cnt2>section>article>.image>video{
     
     height: 100%;
     object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s;
+    
 }
 
 .cnt-wrap2>.cnt2>section>article>.texts{
@@ -264,7 +282,12 @@ body{
     height: 120px;
 }
 .cnt-wrap2>.cnt2>section>article>.texts>p>span{}
+
+.cnt-wrap2>.cnt2>section>article>.texts>button:hover {
+ animation: ani 10s infinite;
+}
 .cnt-wrap2>.cnt2>section>article>.texts>button{
+
   
     line-height: 40px;
     width: calc(100% / 6 * 4 );
@@ -273,10 +296,12 @@ body{
       margin-top: 20px;
       font-size: 24px;
       background-color: #212517;
-       color: #fff;
+    
+       color: #ffffff;
        text-transform: uppercase;
        border-radius: 20px;
        cursor: pointer;
+     
 
 }
 
@@ -328,7 +353,7 @@ body{
 .ftr-wrap{
     background: #A31F30;
     margin-top: 80px;
-padding top: 40px ;
+padding-top: 40px ;
 padding-bottom: 80px ;
  
 }
@@ -531,3 +556,33 @@ display: none;}
 }
 
 }
+@keyframes ani {
+  0% {
+/* 0퍼센트인시청일때 적용될 css */
+  background-color: aqua;
+  }
+ 50%{
+background-color: chocolate;
+
+ }
+ /* 100퍼센트인시청일때 적용될 css */
+  100% {
+    background-color: chartreuse;
+  }
+  100%{
+    background-color: aqua;
+  }
+}
+@keyframes mov {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: calc(100% - 45px);
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+
