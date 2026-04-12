@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+<style>
+/* 헤더탑 */
+.hdr-top-wrap{
+    background-color: black;
+
+}
+.hdr-top-wrap>.hdr-top{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    line height: 40px;
+    text-align: center;
+}
+.hdr-top-wrap>.hdr-top>i{
+    font-size: 35px;
+    color: #fff;
+}
+/* 헤더 */
+.hdr-wrap{
+    background-color:#a31f30;
+}
+.hdr-wrap>header{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1080px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-transform: capitalize;
+
+}
+.hdr-wrap>header>h1{
+    font-size: 25px;
+
+}
+.hdr-wrap>header>ul.gnb{
+    display: flex;
+    column-gap: 20px;
+}
+.hdr-wrap>header>ul.gnb>li{
+    font-size: 20px;
+}
+/* 컨텐츠공통 */
+.cnt-wrap{}
+.cnt-wrap>.content{
+     width: 80%;
+    margin: 0 auto;
+    max-width: 1080px;
+    margin-top: 80px;
+}
+.cnt-wrap>.content>header{}
+.cnt-wrap>.content>header>h2{}
+.cnt-wrap>.content>header>h4{}
+.cnt-wrap>.content>section{
+    margin-top: 40px;
+}
+.cnt-wrap>.content>section>article{}
+.cnt-wrap>.content>section>article>.image{}
+.cnt-wrap>.content>section>article>.texts{}
+.cnt-wrap>.content>section>article>.texts>h3{}
+.cnt-wrap>.content>section>article>.texts>h4{}
+.cnt-wrap>.content>section>article>.texts>P{}
+.cnt-wrap>.content>section>article>.texts>.icons{}
+.cnt-wrap>.content>section>article>.texts>.icons>i{}}
+
+
+/* 컨텐츠1 */
+.cnt-wrap.cnt-wrap1{}
+.cnt-wrap.cnt-wrap1>.content-cnt1{
+     margin-top: 80px;
+}
+.cnt-wrap.cnt-wrap1>.content-cnt1>header{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>header>h2{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>header>h4{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-top{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-top>article{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-top>article>.image i1{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-top>article>.texts{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-top>article>.texts>h3{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-top>article>.texts>h4{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-top>article>.texts>p{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-top>article>.texts>.icons{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-top>article>.texts>.icons>i{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-btm{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-btm>article{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-btm>article>.image i1{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-btm>article>.texts{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-btm>article>.texts>h3{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-btm>article>.texts>h4{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-btm>article>.texts>p{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-btm>article>.texts>.icons{}
+.cnt-wrap.cnt-wrap1>.content-cnt1>section>.art-btm>article>.texts>.icons>i{}
+
+
+/* 컨텐츠2 */
+.cnt-wrap.cnt-wrap2{}
+.cnt-wrap.cnt-wrap2>.content-cnt2{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>header{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>header>h2{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>header>h4{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>section{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>section>article>{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>section>article>.image i1{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>section>article>.texts{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>section>article>.texts>h3{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>section>article>.texts>h4{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>section>article>.texts>p{}
+.cnt-wrap.cnt-wrap2>.content-cnt2>section>article>.texts>button{}
+
+/* 컨텐츠3 */
+.cnt-wrap.cnt-wrap3{}
+.cnt-wrap.cnt-wrap3>.content-cnt3{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>header{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>header>h2{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>header>h4{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>section{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>section>article{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>section>article>.image{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>section>article>.image i1{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>section>article>.image i2{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>section>article>.image i3{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>section>article>.image i4{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>section>article>.texts{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>section>article>.texts>h3{}
+.cnt-wrap.cnt-wrap3>.content-cnt3>section>article>.texts>p{}
+
+/* 푸터 */
+.ftr-wrap{}
+.ftr-wrap>footer{
+     width: 80%;
+    margin: 0 auto;
+    max-width: 1080px;
+    margin-top: 80px;
+}
+.ftr-wrap>footer>h4{}
+.ftr-wrap>footer>address{}
+.ftr-wrap>footer>.icons{}
+.ftr-wrap>footer>.icons>i{}
+
+
+
+
+    </style>
+    
+    <title>연습이당</title>
+
+</head>
+
+<body>
+    <!-- 헤더탑 -->
+    <div class="hdr-top-wrap">
+    <div class="hdr-top">
+    
+            <i class="fa-solid fa-sleigh"></i>
+    
+    </div>
+    </div>
+    <!-- 헤더 -->
+    <div class="hdr-wrap">
+        <header>
+            <h1>logo here</h1>
+            <ul class="gnb">
+                <li><a href="#">about</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">portfolio</a></li>
+            </ul>
+        </header>
+    </div>
+    <!-- 컨텐츠1 -->
+    
+    <div class="cnt-wrap cnt-wrap1">
+        <div class="content cnt1">
+
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ipsam eligendi pariatur tempore
+                    cum
+                    unde!</h4>
+            </header>
+            <section>
+                <div class="art-top">
+
+                    <article>
+                        <div class="image i1">이미지</div>
+                        <div class="texts">
+                            <h3>segement title</h3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sed?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora repellat ex ipsum
+                                expedita.
+                                Expedita ut perferendis maxime veniam repellendus dicta consequuntur totam numquam sit,
+                                quia
+                                aperiam autem perspiciatis. Sequi, voluptas?</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article>
+                        <div class="image i2">이미지</div>
+                        <div class="texts">
+                            <h3>segement title</h3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sed?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora repellat ex ipsum
+                                expedita.
+                                Expedita ut perferendis maxime veniam repellendus dicta consequuntur totam numquam sit,
+                                quia
+                                aperiam autem perspiciatis. Sequi, voluptas?</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+                <div class="art-btm">
+                    <article>
+                        <div class="image i1">이미지</div>
+                        <div class="texts">
+                            <h3>segement title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora repellat ex ipsum
+                                expedita.
+                                Expedita ut perferendis maxime veniam repellendus dicta consequuntur totam numquam sit,
+                                quia
+                                aperiam autem perspiciatis. Sequi, voluptas?</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article>
+                        <div class="image i2">이미지</div>
+                        <div class="texts">
+                            <h3>segement title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora repellat ex ipsum
+                                expedita.
+                                Expedita ut perferendis maxime veniam repellendus dicta consequuntur totam numquam sit,
+                                quia
+                                aperiam autem perspiciatis. Sequi, voluptas?</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article>
+                        <div class="image i3">이미지</div>
+                        <div class="texts">
+                            <h3>segement title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora repellat ex ipsum
+                                expedita.
+                                Expedita ut perferendis maxime veniam repellendus dicta consequuntur totam numquam sit,
+                                quia
+                                aperiam autem perspiciatis. Sequi, voluptas?</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- 컨텐츠2 -->
+    <div class="cnt-wrap cnt-wrap2">
+        <div class="content cnt2">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ipsam eligendi pariatur tempore
+                    cum
+                    unde!</h4>
+            </header>
+            <section>
+                <article>
+                    <div class="image i1">이미지</div>
+                    <div class="texts">
+                        <h3>content title</h3>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officia consequatur
+                            voluptatum
+                            quas repudiandae deserunt in libero cumque nisi hic, officiis architecto porro adipisci
+                            recusandae rerum natus, quo cupiditate vero.</p>
+                        <button> button </button>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <!-- 컨텐츠3 -->
+    <div class="cnt-wrap cnt-wrap3">
+        <div class="content cnt3">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ipsam eligendi pariatur tempore
+                    cum
+                    unde!</h4>
+            </header>
+            <section>
+                <article>
+                    <div class="image i1">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corrupti voluptas aut?
+                            Voluptatibus inventore sed architecto nesciunt minima ut hic doloribus, maiores accusamus
+                            natus,
+                            assumenda repellat ad illo exercitationem reiciendis.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="image i2">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corrupti voluptas aut?
+                            Voluptatibus inventore sed architecto nesciunt minima ut hic doloribus, maiores accusamus
+                            natus,
+                            assumenda repellat ad illo exercitationem reiciendis.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="image i3">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corrupti voluptas aut?
+                            Voluptatibus inventore sed architecto nesciunt minima ut hic doloribus, maiores accusamus
+                            natus,
+                            assumenda repellat ad illo exercitationem reiciendis.</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <div class="ftr-wrap">
+        <footer>
+            <h4>logo here</h4>
+            <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sequi non minus, dolores, vel
+                assumenda repellendus incidunt vero ipsam accusamus fugit quo facilis, architecto commodi. Nihil
+                nesciunt vitae reprehenderit et!</address>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
